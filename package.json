@@ -15,3 +15,12 @@
         "mocha": "^10.6.0"
     }
 }
+1. El Script de Prueba (scripts)
+"test": "mocha tests/*.js"
+Cuando escribes en tu terminal npm test, lo que realmente sucede es que Node.js busca este comando y ejecuta Mocha.
+
+Mocha es el "framework" (el motor) que se encarga de leer tus archivos en la carpeta tests/ y comparar lo que tus funciones retornan con los resultados esperados.
+2. Dependencias (dependencies y devDependencies)
+Mocha: Es la herramienta principal para correr las pruebas.
+
+Assert: Es una librería que sirve para "afirmar" cosas. Por ejemplo, el test dirá algo como: assert.equal(sumar(2, 2), 4). Si tu función retorna 4, la prueba pasa; si no, marca error.
